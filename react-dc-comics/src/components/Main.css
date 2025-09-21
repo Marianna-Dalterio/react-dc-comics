@@ -1,0 +1,15 @@
+main {
+    background-color: black;
+    min-height: 150px;
+}
+
+.text {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 3rem;
+    font-weight: bold;
+    font-size: x-large;
+
+}

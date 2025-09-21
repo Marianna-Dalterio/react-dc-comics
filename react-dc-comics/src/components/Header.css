@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    /*logo a sx, menù a dx*/
+    align-items: center;
+    padding: 2rem 5rem;
+    /* spazio ai lati*/
+    min-height: 100px;
+}
+
+.header image {
+    min-height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar li {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+/*NON FUNZIONA, DA AGGIUSTARE*/
+.navbar li.hover {
+    color: #0282f9;
+    border-bottom: 4px solid #0282f9;
+    padding-bottom: 5px;
+}
