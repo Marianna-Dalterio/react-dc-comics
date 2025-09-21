@@ -1,3 +1,37 @@
-.dc-comics {
-    background-image: ;
+.column {
+    padding: 5rem 5rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
 }
+
+.footer-logo {
+    position: absolute;
+    right: 15rem;
+    bottom: 0;
+    width: 600px;
+    z-index: 1;
+    /* Assicura che il logo sia visibile sopra lo sfondo */
+
+}
+
+li {
+    list-style: none;
+    color: white;
+    padding-bottom: 1rem;
+    font-weight: 50;
+    cursor: pointer;
+
+}
+
+h4 {
+    font-weight: bold;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.footer {}
