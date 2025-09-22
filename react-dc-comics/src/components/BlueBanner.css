@@ -1,0 +1,20 @@
+.blue-banner {
+    background-color: #0282f9;
+    min-height: 150px;
+    padding: 60px 0;
+}
+
+.blue-banner ul {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.blue-banner img {
+    width: 50px;
+    height: auto;
+    justify-content: space-around;
+
+}
