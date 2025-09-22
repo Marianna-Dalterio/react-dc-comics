@@ -1,3 +1,4 @@
+//PROBLEMI: il bg logo si vede per intero + allineamento testo-icone nella greybar
 import "./Footer.css";
 import footerbg from "/img/footer-bg.jpg"; //importo background
 import footerlogo from "/img/dc-logo-bg.png";
@@ -60,6 +61,20 @@ export default function () {
 
 
         </div>
+        <div className="greybar">
+            <button>Sign-up now!</button>
+            <div className="social-media">
+                <span className="follow-us">follow us</span>
+                <span><img src="/img/footer-facebook.png" alt="" /></span>
+                <span><img src="/img/footer-twitter.png" alt="" /></span>
+                <span><img src="/img/footer-youtube.png" alt="" /></span>
+                <span><img src="/img/footer-pinterest.png" alt="" /></span>
+                <span><img src="/img/footer-periscope.png" alt="" /></span>
+            </div>
+
+        </div>
+
+
 
 
     </footer>);

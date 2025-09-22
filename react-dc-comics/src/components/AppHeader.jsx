@@ -1,3 +1,5 @@
+//PROBLEMI: non funziona l'hover sui link 
+
 import "./Header.css"; //importo .css
 export default function () {
     return (<header className="header">
