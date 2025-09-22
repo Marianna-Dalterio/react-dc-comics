@@ -1,5 +1,5 @@
 import "./Main.css";
 export default function () {
-    return (<main className="text"> -- Content goes here --
+    return (<main className="text"> --&gt; Content goes here &lt;--
     </main>);
 }
