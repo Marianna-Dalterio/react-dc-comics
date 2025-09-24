@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    /* Imposta la direzione dei figli in colonna */
+    text-align: center;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.card span {
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.col {
+    width: calc(100% / 6 - 20px);
+    /* Regola la larghezza in base al numero di colonne che vuoi */
+}

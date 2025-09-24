@@ -1,0 +1,19 @@
+/* con il module.css diamo stile solo alle "card" quindi icona e testo del blu banner  */
+
+.item {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.item img {
+    width: 20%;
+    height: auto;
+    justify-content: space-around;
+
+}

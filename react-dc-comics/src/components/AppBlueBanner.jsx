@@ -1,26 +1,22 @@
 import "./BlueBanner.css";
-export default function () {
+import BlueBannerItems from "./BlueBannerItems";
+export default function AppBlueBanner() {
     return (<div className="blue-banner">
         <ul>
             <li>
-                <img src="\img\buy-comics-digital-comics.png" alt="buy-digital-comics" />
-                <span>digital comics</span>
+                <BlueBannerItems img="/img/buy-comics-digital-comics.png" text="digital comics" />
             </li>
             <li>
-                <img src="/img/buy-comics-merchandise.png" alt="" />
-                <span>dc merchandise</span>
+                <BlueBannerItems img="/img/buy-comics-merchandise.png" text="dc merchandise" />
             </li>
             <li>
-                <img src="/img/buy-comics-subscriptions.png" alt="" />
-                <span>subscription</span>
+                <BlueBannerItems img="/img/buy-comics-subscriptions.png" text="subscription" />
             </li>
             <li>
-                <img src="/img/buy-comics-shop-locator.png" alt="" />
-                <span>comic shop locator</span>
+                <BlueBannerItems img="/img/buy-comics-shop-locator.png" text="comic shop locator" />
             </li>
             <li>
-                <img src="/img/buy-dc-power-visa.svg" alt="" />
-                <span>dc power visa</span>
+                <BlueBannerItems img="/img/buy-dc-power-visa.svg" text="dc power visa" />
             </li>
         </ul>
     </div>);

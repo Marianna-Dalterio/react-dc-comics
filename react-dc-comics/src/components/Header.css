@@ -27,8 +27,8 @@
 
 }
 
-/*NON FUNZIONA, DA AGGIUSTARE*/
-.navbar li.hover {
+
+.navbar li a:hover {
     color: #0282f9;
     border-bottom: 4px solid #0282f9;
     padding-bottom: 5px;
