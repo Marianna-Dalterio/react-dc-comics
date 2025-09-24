@@ -25,3 +25,11 @@ main {
     width: 200px;
     /* Imposta una larghezza fissa per ogni colonna */
 }
+
+.container {
+    width: 90%;
+    /* Larghezza del container principale, potresti volere un max-width */
+    margin: 0 auto;
+    /* Centra il container */
+    padding: 20px 0;
+}
