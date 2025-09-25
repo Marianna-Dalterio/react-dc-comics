@@ -8,10 +8,17 @@ import AppFooter from './components/AppFooter';
 import AppBlueBanner from './components/AppBlueBanner';
 
 function App() {
-
+  // const teachers = [<li>Florian</li>, <li>Samuele</li>, <li>Simone</li>];
 
   return (
     <>
+      {/* <div>
+        <ul>
+          {teachers.map((teacher) => (<li>{teacher}</li>)
+          )}
+        </ul>
+      </div> */}
+
       <AppHeader />
       <AppMain />
       <AppBlueBanner />
