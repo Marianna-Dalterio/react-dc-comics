@@ -2,6 +2,8 @@
 import "./Footer.css";
 import footerbg from "/img/footer-bg.jpg"; //importo background
 import footerlogo from "/img/dc-logo-bg.png";
+//importo array di oggetti da data x la lista 
+import { menuFooter } from "../data/MenuAppFooter";
 
 export default function () {
     //creo oggetto di stile con la proprietà backgroundImage che usa la variabile importata sopra  
@@ -11,52 +13,30 @@ export default function () {
     };
 
     return (<footer style={footerStyle}>
+        <div className="container">
+            <div className="row"> {/* Genitore Flexbox */}
+                {/* Logo (Posizionato assolutamente rispetto al .row) */}
+                <img src={footerlogo} alt="DC Logo" className="footer-logo" />
+                {/* Contenitore delle colonne di link (Deve essere Flex per affiancarle) */}
+                <div className="list-container">
 
-        <div className="column">
-            <img src={footerlogo} alt="DC Logo" className="footer-logo" />
-            <div className="dc-comics">
-                <h4>DC Comics</h4>
-                <ul>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>TV</li>
-                    <li>Games</li>
-                    <li>Videos</li>
-                    <li>News</li>
-                </ul>
-                <h4>Shop</h4>
-                <ul>
-                    <li>Shop DC</li>
-                    <li>Shop DC Collectibles</li>
-                </ul>
+                    {menuFooter.map(menu => (
+                        <div className="col" key={menu.id}><h3>{menu.title}</h3> {/* Le singole colonne */}
+                            <ul>
+                                {/* Mappa corretta sulla lista dell'elemento corrente */}
+                                {menu.list.map(list_item =>
+                                    <li key={list_item.id}>
+                                        <a href={list_item.link}>{list_item.text}</a>
+                                    </li>
+                                )}
+                            </ul>
+                        </div>
+                    ))}
+
+                </div>
+
             </div>
-            <div className="DC">
-                <h4>DC</h4>
-                <ul>
-                    <li>Terms Of Use</li>
-                    <li>Privacy policy (New)</li>
-                    <li>Ad Choices</li>
-                    <li>Advertising</li>
-                    <li>Jobs</li>
-                    <li>Subscriptions</li>
-                    <li>Talent Workshops</li>
-                    <li>CPSC Certificates</li>
-                    <li>Ratings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div className="sites">
-                <h4>Sites</h4>
-                <ul>
-                    <li>DC</li>
-                    <li>MAD Magazine</li>
-                    <li>DC Kids</li>
-                    <li>DC Universe</li>
-                    <li>DC Power Visa</li>
-                </ul>
-            </div>
+
 
 
 

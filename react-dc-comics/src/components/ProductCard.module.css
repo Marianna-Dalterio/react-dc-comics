@@ -10,8 +10,7 @@
     width: 200px;
     height: 200px;
     display: block;
-    object-fit: cover;
-    /*serve per evitare deformazioni*/
+
 
 }
 
@@ -20,6 +19,7 @@
     padding: 10px 5px;
     text-transform: uppercase;
     color: white;
+    text-align: center;
 
 }
 

@@ -1,46 +1,86 @@
-.column {
-    padding: 5rem 5rem;
-    gap: 2rem;
+/* Contenitore principale (dove si trovano colonne di link e logo) */
+.row {
     display: flex;
-    justify-content: flex-start;
+    /* Abilita flexbox per allineare i gruppi di link */
     position: relative;
+    /* Base per il posizionamento assoluto del logo */
+    overflow: hidden;
+    /* **CHIAVE:** Nasconde la parte del logo che esce dal contenitore */
+    min-height: 400px;
+    /* Assicura un'altezza minima per il logo e i link */
+    justify-content: flex-start;
 }
 
+/*  la classe .col per contenere i link  */
+.col {
+    padding-right: 2rem;
+
+}
+
+.list-container {
+    display: flex;
+    position: relative;
+
+
+
+    li {
+        list-style: none;
+        color: white;
+        font-weight: 150;
+        cursor: pointer;
+        align-items: center;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    h3 {
+        color: white;
+        text-transform: uppercase;
+    }
+
+}
+
+/* Correzione per il logo di sfondo (.footer-logo) */
 .footer-logo {
     position: absolute;
-    right: 15rem;
-    bottom: 0;
+    right: 5rem;
+    /* Spostalo più a destra per il ritaglio */
+    bottom: -150px;
+    /* Spostalo più in basso per il ritaglio */
     width: 600px;
+    opacity: 0.5;
+    /* Rendi il logo semi-trasparente */
     z-index: 1;
-    /* Assicura che il logo sia visibile sopra lo sfondo */
-
-}
-
-li {
-    list-style: none;
-    color: white;
-    padding-bottom: 1rem;
-    font-weight: 50;
-    cursor: pointer;
-
-}
-
-h4 {
-    font-weight: bold;
-    font-size: x-large;
-    text-transform: uppercase;
-    color: white;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    /* Assicura che sia sotto i link */
 }
 
 .greybar {
     background-color: #303030;
-    min-height: 150px;
     padding: 15px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    /* **CHIAVE:** Allinea testo e icone verticalmente */
+    gap: 1rem;
+}
+
+.follow-us {
+    text-transform: uppercase;
+    color: #0282f9;
+    font-weight: bold;
+    font-size: large;
+
 }
 
 button {
@@ -52,17 +92,4 @@ button {
     background-color: #303030;
     color: white;
 
-}
-
-.follow-us {
-    text-transform: uppercase;
-    color: #0282f9;
-    font-weight: bold;
-    font-size: large;
-
-}
-
-.social-media {
-    display: flex;
-    gap: 1rem;
 }

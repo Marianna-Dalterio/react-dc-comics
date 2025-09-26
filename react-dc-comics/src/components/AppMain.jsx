@@ -1,4 +1,4 @@
-//PROBLEMI: nella blubar le icone non sono allineate al testo + rendi responsive + controlla css dei link cliccabili, hover funziona ma cambia stile
+//PROBLEMI: nella blubar le icone non sono allineate al testo + rendi responsive 
 import "./Main.css";
 import ProductCard from "./ProductCard";
 

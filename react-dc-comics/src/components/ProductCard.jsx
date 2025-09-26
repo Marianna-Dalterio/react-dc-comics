@@ -4,7 +4,8 @@ import styles from "./ProductCard.module.css"
 
 export default function ProductCard({ img, text }) {
     return (
-        <div className="card">
+        /*accedi alla classe tramite l'oggetto styles*/
+        <div className={styles.card}>
             <img src={img} alt={text} />
             <span>{text}</span>
         </div>
