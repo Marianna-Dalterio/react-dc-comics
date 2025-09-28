@@ -14,6 +14,8 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+
+
 }
 
 .col {
@@ -28,6 +30,11 @@
     /* Centra il container */
     padding: 20px 0;
 
+    .current-series-btn {
+        background-color: #0282f9;
+        margin: 20px auto;
+
+    }
 }
 
 .main-section {
@@ -35,4 +42,14 @@
     min-height: 150px;
     padding: 20px 0;
     /*padding per distanziare le card dai bordi */
+}
+
+.load-more-btn {
+    background-color: #0282f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: 40px auto;
+
 }

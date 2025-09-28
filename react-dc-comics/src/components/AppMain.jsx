@@ -7,6 +7,9 @@ export default function AppMain() {
     return (
         <div className="main-section">
             <div className="container">
+                <div>
+                    <button className="current-series-btn">Current series</button>
+                </div>
                 <div className="row">
 
                     <div className="col">
@@ -44,6 +47,9 @@ export default function AppMain() {
                     </div>
                     <div className="col">
                         <ProductCard img="https://imgs.search.brave.com/bf_FlGnymAgmvweY8YiLAcyy600JdSMl_jHpdR3t5ro/rs:fit:612:612:1/g:ce/aHR0cHM6Ly9pNS53/YWxtYXJ0aW1hZ2Vz/LmNvbS9hc3IvNTA5/M2IxOTEtZTkzZS00/NTJjLThhYTQtYTEw/ZDY0ZTcxN2E5LjA5/N2UwZWM5NDgzYzky/OGExMjY4Nzk1Nzk2/NTliZWNjLmpwZWc_/b2RuV2lkdGg9NjEy/Jm9kbkhlaWdodD02/MTImb2RuQmc9ZmZm/ZmZm" text="catwoman" />
+                    </div>
+                    <div>
+                        <button className="load-more-btn">Load more</button>
                     </div>
 
                 </div>
