@@ -1,7 +1,8 @@
+//importo contenitore di card 
 import CardsContainer from "./CardsContainer";
+//importo css
 import "./Main.css";
-//importo card prop
-import ProductCard from "./ProductCard";
+
 
 
 
