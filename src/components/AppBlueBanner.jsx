@@ -1,4 +1,5 @@
 import "./BlueBanner.css";
+//importo bluebanneritems prop
 import BlueBannerItems from "./BlueBannerItems";
 export default function AppBlueBanner() {
     return (<div className="blue-banner">

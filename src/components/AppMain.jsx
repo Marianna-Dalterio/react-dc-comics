@@ -1,5 +1,5 @@
-//PROBLEMI: nella blubar le icone non sono allineate al testo + rendi responsive 
 import "./Main.css";
+//importo card prop
 import ProductCard from "./ProductCard";
 
 
