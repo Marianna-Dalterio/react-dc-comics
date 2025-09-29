@@ -1,4 +1,8 @@
 /* Contenitore principale (dove si trovano colonne di link e logo) */
+.main-footer {
+    background-image: url(../assets/img/footer-bg.jpg);
+}
+
 .row {
     display: flex;
     /* Abilita flexbox per allineare i gruppi di link */
@@ -58,6 +62,10 @@
     /* Rendi il logo semi-trasparente */
     z-index: 1;
     /* Assicura che sia sotto i link */
+}
+
+.footerbg {
+    max-width: 100%;
 }
 
 .greybar {
