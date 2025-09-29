@@ -2,11 +2,10 @@
 
 //importo card prop, quindi struttura card
 import ProductCard from "./ProductCard";
-//importo dati 
-import comics from "../data/comics"
 
 
-export default function CardsContainer() {
+
+export default function CardsContainer({ comics }) {
     return (
         <div className="row">
 

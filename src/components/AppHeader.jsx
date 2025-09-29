@@ -1,11 +1,7 @@
 import "./Header.css"; //importo .css
-//importazione nominale con graffe
-import { menu } from "../data/MenuAppHeader";
-//import. di default senza graffe e dando qualsiasi nome voglio
-// import menuNavbar from "../data/MenuAppHeader";
 import dc_logo_bg from "../assets/img/dc-logo-bg.png"
 
-export default function () {
+export default function ({ menu }) {
 
     return (<header className="header">
         <img src={dc_logo_bg} alt="logo" />

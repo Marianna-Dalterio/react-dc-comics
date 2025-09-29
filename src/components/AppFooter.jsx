@@ -1,8 +1,5 @@
 import "./Footer.css";
-
 import footerlogo from "../assets/img/dc-logo-bg.png";
-//importo array di oggetti da data x la lista 
-import { menuFooter } from "../data/MenuAppFooter";
 //importo logo social media
 import facebook from "../assets/img/footer-facebook.png";
 import twitter from "../assets/img/footer-twitter.png";
@@ -10,7 +7,7 @@ import youtube from "../assets/img/footer-youtube.png";
 import pinterest from "../assets/img/footer-pinterest.png";
 import periscope from "../assets/img/footer-periscope.png";
 
-export default function () {
+export default function ({ menu }) {
     //creo oggetto di stile con la proprietà backgroundImage che usa la variabile importata sopra  
 
 
@@ -23,7 +20,7 @@ export default function () {
                     {/* Contenitore delle colonne di link (Deve essere Flex per affiancarle) */}
                     <div className="list-container">
 
-                        {menuFooter.map(menu => (
+                        {menu.map(menu => (
                             <div className="col" key={menu.id}><h3>{menu.title}</h3> {/* Le singole colonne */}
                                 <ul>
                                     {/* Mappa corretta sulla lista dell'elemento corrente */}
