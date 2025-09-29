@@ -1,9 +1,14 @@
-//PROBLEMI: il bg logo si vede per intero + allineamento testo-icone nella greybar
 import "./Footer.css";
-import footerbg from "/img/footer-bg.jpg"; //importo background
-import footerlogo from "/img/dc-logo-bg.png";
+import footerbg from "../assets/img/footer-bg.jpg"; //importo background
+import footerlogo from "../assets/img/dc-logo-bg.png";
 //importo array di oggetti da data x la lista 
 import { menuFooter } from "../data/MenuAppFooter";
+//importo logo social media
+import facebook from "../assets/img/footer-facebook.png";
+import twitter from "../assets/img/footer-twitter.png";
+import youtube from "../assets/img/footer-youtube.png";
+import pinterest from "../assets/img/footer-pinterest.png";
+import periscope from "../assets/img/footer-periscope.png";
 
 export default function () {
     //creo oggetto di stile con la proprietà backgroundImage che usa la variabile importata sopra  
@@ -45,11 +50,11 @@ export default function () {
             <button>Sign-up now!</button>
             <div className="social-media">
                 <span className="follow-us">follow us</span>
-                <span><img src="/img/footer-facebook.png" alt="" /></span>
-                <span><img src="/img/footer-twitter.png" alt="" /></span>
-                <span><img src="/img/footer-youtube.png" alt="" /></span>
-                <span><img src="/img/footer-pinterest.png" alt="" /></span>
-                <span><img src="/img/footer-periscope.png" alt="" /></span>
+                <span><img src={facebook} alt="" /></span>
+                <span><img src={twitter} alt="" /></span>
+                <span><img src={youtube} alt="" /></span>
+                <span><img src={pinterest} alt="" /></span>
+                <span><img src={periscope} alt="" /></span>
             </div>
 
         </div>

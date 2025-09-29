@@ -1,5 +1,5 @@
 import "./jumbotron.css";
-import jumbotronBg from "/img/jumbotron.jpg";
+import jumbotronBg from "../assets/img/jumbotron.jpg";
 export default function AppJumbotron() {
     return (
 
